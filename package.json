@@ -4,8 +4,15 @@
   "description": "Code from the React tutorial.",
   "main": "server.js",
   "dependencies": {
+    "babel-preset-react": "^6.1.18",
+    "babelify": "^7.2.0",
     "body-parser": "^1.4.3",
-    "express": "^4.4.5"
+    "browserify": "^12.0.1",
+    "express": "^4.4.5",
+    "jquery": "^2.1.4",
+    "marked": "^0.3.5",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3"
   },
   "devDependencies": {},
   "scripts": {
@@ -27,7 +34,7 @@
     "url": "https://github.com/reactjs/react-tutorial/issues"
   },
   "homepage": "https://github.com/reactjs/react-tutorial",
-  "engines" : {
-    "node" : "0.12.x"
+  "engines": {
+    "node": "0.12.x"
   }
 }
