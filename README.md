@@ -1,47 +1,31 @@
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+This is my test project forked from [the React tutorial](http://facebook.github.io/react/docs/tutorial.html).
+I use to test combination of ES6 + npm/CommonJS + Webpack + ReactJS.
 
-# React Tutorial
+## Refs
 
-This is the React comment box example from [the React tutorial](http://facebook.github.io/react/docs/tutorial.html).
+- https://github.com/webpack/webpack/issues/86
+
+## Passed features
+
+- es6 to es5
+- jsx to js
+- assets revision
+- output assets.json
+
+## Expected features
+
+- Fully mirror src_dir to dist_dir, with expected transformations.
+- Replace reference in html templates, and output html files
 
 ## To use
 
 There are several simple server implementations included. They all serve static files from `public/` and handle requests to `/api/comments` to fetch or add data. Start a server with one of the following:
 
-### Node
+### Server
 
 ```sh
 npm install
 node server.js
-```
-
-### Python
-
-```sh
-pip install -r requirements.txt
-python server.py
-```
-
-### Ruby
-```sh
-ruby server.rb
-```
-
-### PHP
-```sh
-php server.php
-```
-
-### Go
-```sh
-go run server.go
-```
-
-### Perl
-
-```sh
-cpan Mojolicious
-perl server.pl
 ```
 
 And visit <http://localhost:3000/>. Try opening multiple tabs!
