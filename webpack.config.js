@@ -1,6 +1,7 @@
 var path = require("path");
 var webpack = require("webpack");
 var AssetsPlugin = require('assets-webpack-plugin');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var assetsPluginInstance = new AssetsPlugin({
 	prettyPrint: true,
 	filename: 'assets.json'
@@ -23,6 +24,7 @@ module.exports = {
 		loaders: [
 			// required to write "require('./style.css')"
 			{ test: /\.css$/,    loader: "style-loader!css-loader" },
+			// { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader") },
 
 			// required for bootstrap icons
 			// { test: /\.woff$/,   loader: "url-loader?prefix=font/&limit=5000&mimetype=application/font-woff" },
@@ -47,6 +49,7 @@ module.exports = {
 		// 	jQuery: "jquery",
 		// 	$: "jquery"
 		// }),
-		assetsPluginInstance
+		assetsPluginInstance,
+		// new ExtractTextPlugin("[name]-[chunkhash].css")
 	]
 };

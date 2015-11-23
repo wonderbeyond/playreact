@@ -4,6 +4,7 @@ I use to test combination of ES6 + npm/CommonJS + Webpack + ReactJS.
 ## Refs
 
 - https://github.com/webpack/webpack/issues/86
+- http://simonsmith.io/using-webpack-to-build-react-components-and-their-assets/
 
 ## Passed features
 
